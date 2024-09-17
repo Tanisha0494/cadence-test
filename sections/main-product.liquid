@@ -328,10 +328,15 @@
                   </h2>
                 </a>
               </div>
+
+
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
+
+              {{ product.description }}
+
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
                   {%- if shop.taxes_included -%}
@@ -349,14 +354,10 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
+
+
             {% comment %} Where I thought to move description for it to show under price {% endcomment %}
 
-            {%- when 'description' -%}
-              {%- if product.description != blank -%}
-                <div class="product__description rte quick-add-hidden">
-                  {{ product.description }}
-                </div>
-              {%- endif -%}
 
 
             {%- when 'custom_liquid' -%}
