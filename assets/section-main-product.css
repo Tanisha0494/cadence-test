@@ -57,14 +57,14 @@
 
 @media screen and (min-width: 990px) {
   .product--large:not(.product--no-media) .product__media-wrapper {
-    max-width: 51%;
-    width: calc(51% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 40%;
+    width: calc(40% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--large:not(.product--no-media) .product__info-wrapper {
     padding: 0 0 0 4rem;
-    max-width: 49%;
-    width: calc(49% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 60%;
+    width: calc(60% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--large:not(.product--no-media).product--right .product__info-wrapper {
@@ -577,7 +577,7 @@ a.product__text {
   }
 }
 
-@media (min-width 750px) and (max-width: 1024px){
+@media (min-width: 750px) and (max-width: 1024px) {
   /* ADD TO CART NEXT TO QUANTITY */
 
   .button--full-width {
@@ -1297,7 +1297,7 @@ a.product__text {
 
     .product--thumbnail_slider .thumbnail-slider {
         display: block;
-        width: 18%;
+        width: 17%;
         float: left;
         margin-right:10px;
     }
@@ -1344,7 +1344,7 @@ a.product__text {
     }
 
     .form-buttons {
-        width: 62%;
+        width: 71%;
     }
 
 }
